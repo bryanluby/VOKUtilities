@@ -1,5 +1,5 @@
 //
-//  VOKUtilitiesTests.m
+//  UIColor_VOKAL_Tests.m
 //  VOKUtilitiesTests
 //
 //  Created by Isaac Greenspan on 11/10/2014.
@@ -46,6 +46,13 @@
     XCTAssertEqualObjects([UIColor vok_colorWithHexInt:0xA4C53F alpha:0.50f], [vokalColor colorWithAlphaComponent:0.50f]);
     XCTAssertEqualObjects([UIColor vok_colorWithHexInt:0xA4C53F alpha:0.25f], [vokalColor colorWithAlphaComponent:0.25f]);
     XCTAssertEqualObjects([UIColor vok_colorWithHexInt:0xA4C53F alpha:0.00f], [vokalColor colorWithAlphaComponent:0.00f]);
+}
+
+- (void)testColorWithHexStringWhite
+{
+    UIColor *white = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    XCTAssertEqualObjects([UIColor vok_colorWithHexString:@"#FFFFFF" alpha:1.0], white);
+    XCTAssertEqualObjects([UIColor vok_colorWithHexString:@" #FFFFFFUYTUYTIU##   "], white);
 }
 
 @end
