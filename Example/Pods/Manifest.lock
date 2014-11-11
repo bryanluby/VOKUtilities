@@ -1,0 +1,16 @@
+PODS:
+  - VOKUtilities (0.1.0):
+    - VOKUtilities/UIColor+VOKAL
+  - VOKUtilities/UIColor+VOKAL (0.1.0)
+
+DEPENDENCIES:
+  - VOKUtilities (from `../`)
+
+EXTERNAL SOURCES:
+  VOKUtilities:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VOKUtilities: 81c978aa84f4bdad1f5f950167c6f0d789586a0c
+
+COCOAPODS: 0.34.4
