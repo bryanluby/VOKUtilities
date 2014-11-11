@@ -1,5 +1,6 @@
 # VOKUtilities
 
+![Travis-CI build status badge](https://magnum.travis-ci.com/vokalinteractive/VOKUtilities.svg?token=J2zp9CcvMvkYBp8Q4FyY)  
 Assorted category and utility classes for iOS
 
 ## UIColor+VOKAL
