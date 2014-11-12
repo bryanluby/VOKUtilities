@@ -1,7 +1,9 @@
 PODS:
-  - VOKUtilities (0.1.0):
+  - VOKUtilities (0.1.1):
+    - VOKUtilities/NSCalendar+VOKAL
     - VOKUtilities/UIColor+VOKAL
-  - VOKUtilities/UIColor+VOKAL (0.1.0)
+  - VOKUtilities/NSCalendar+VOKAL (0.1.1)
+  - VOKUtilities/UIColor+VOKAL (0.1.1)
 
 DEPENDENCIES:
   - VOKUtilities (from `../`)
@@ -11,6 +13,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  VOKUtilities: 81c978aa84f4bdad1f5f950167c6f0d789586a0c
+  VOKUtilities: 93592a6ab7f15b76eb9ba80976173fe71b02d8fc
 
 COCOAPODS: 0.34.4

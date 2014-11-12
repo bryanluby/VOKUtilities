@@ -18,6 +18,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* UIColor_VOKAL_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* UIColor_VOKAL_Tests.m */; };
+		718A60ED1A14299600E121F0 /* NSCalendar_VOKAL_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 718A60EC1A14299600E121F0 /* NSCalendar_VOKAL_Tests.m */; };
 		A4715FBE236CE69E98D5BBDC /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C83E3005AE53FA53CA114B59 /* libPods-Tests.a */; };
 		BB0944A1B3468FDFA90DDCE3 /* libPods-VOKUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4545E61C9BDEC7A2931FC7B6 /* libPods-VOKUtilities.a */; };
 /* End PBXBuildFile section */
@@ -52,11 +53,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* UIColor_VOKAL_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColor_VOKAL_Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		718A60EC1A14299600E121F0 /* NSCalendar_VOKAL_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCalendar_VOKAL_Tests.m; sourceTree = "<group>"; };
 		9B72BC23F8822988BAE90481 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9E257FC6D18E8E1CF054DBE8 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BA11FD1EEF89843CAE00D70C /* Pods-VOKUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOKUtilities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOKUtilities/Pods-VOKUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 		C83E3005AE53FA53CA114B59 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6C57844CF1482C3432A4764 /* VOKUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VOKUtilities.podspec; path = ../VOKUtilities.podspec; sourceTree = "<group>"; };
+		F6C57844CF1482C3432A4764 /* VOKUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VOKUtilities.podspec; path = ../VOKUtilities.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F9C91AF1E5B9E39540E72547 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				718A60EC1A14299600E121F0 /* NSCalendar_VOKAL_Tests.m */,
 				6003F5BB195388D20070C39A /* UIColor_VOKAL_Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718A60ED1A14299600E121F0 /* NSCalendar_VOKAL_Tests.m in Sources */,
 				6003F5BC195388D20070C39A /* UIColor_VOKAL_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
