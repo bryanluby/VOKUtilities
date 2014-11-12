@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'UIColor+VOKAL' do |ss|
-    ss.source_files = 'Pod/UIColor+VOKAL.{h,m}'
+    ss.source_files = 'Pod/UIColor+VOKAL/*.{h,m}'
   end
 end
