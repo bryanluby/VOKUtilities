@@ -90,4 +90,27 @@
     XCTAssertEqual(2014, [self.calendar component:NSCalendarUnitYear fromDate:halloweenForever]);
 }
 
+- (void)testLastWeekdayBeforeDateLeapDay
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.year = 2004;
+    components.month = 2;
+    components.day = 29;
+    NSDate *leapSunday = [self.calendar dateFromComponents:components];
+    NSDate *weekdayBefore = [self.calendar vok_lastWeekdayBeforeDate:leapSunday];
+    
+    XCTAssertEqual(  27, [self.calendar component:NSCalendarUnitDay fromDate:weekdayBefore]);
+    XCTAssertEqual(   2, [self.calendar component:NSCalendarUnitMonth fromDate:weekdayBefore]);
+    XCTAssertEqual(2004, [self.calendar component:NSCalendarUnitYear fromDate:weekdayBefore]);
+    
+    components.month = 3;
+    components.day = 1;
+    NSDate *pulaskiDay = [self.calendar dateFromComponents:components];
+    weekdayBefore = [self.calendar vok_lastWeekdayBeforeDate:pulaskiDay];
+    
+    XCTAssertEqual(  27, [self.calendar component:NSCalendarUnitDay fromDate:weekdayBefore]);
+    XCTAssertEqual(   2, [self.calendar component:NSCalendarUnitMonth fromDate:weekdayBefore]);
+    XCTAssertEqual(2004, [self.calendar component:NSCalendarUnitYear fromDate:weekdayBefore]);
+}
+
 @end
